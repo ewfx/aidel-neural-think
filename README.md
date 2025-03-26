@@ -17,7 +17,8 @@
 Develop a sophisticated Generative Al/ML powered system that automates the research and evidence-gathering process for identifying, verifying, and risk-scoring entities (corporations, non-profits, shell companies, and financial intermediaries) from complex, multi-source transaction data. The solution should significantly reduce manual effort for data analysts, improve accuracy, and provide a robust risk evaluation mechanism.
 
 ## 🎥 Demo 
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](artifacts/demo/demo_video.mp4)
+
 🖼️ Screenshots:
 
 ![Home Page](artifacts/20250326_18h45m06s_grim.png)

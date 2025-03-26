@@ -1,0 +1,19 @@
+Risk Score Scale (0 to 1)
+
+    0.0 - 0.2: Low risk (minimal or no fraud/legal issues)
+
+    0.3 - 0.5: Moderate risk (some past issues but not systemic)
+
+    0.6 - 0.8: High risk (multiple fraud allegations, lawsuits, or regulatory actions)
+
+    0.9 - 1.0: Critical risk (major fraud, ongoing criminal investigations, bankruptcy risk)
+
+Confidence Score (0 to 1)
+
+    Represents how confident the model is in the risk assessment based on data availability and credibility.
+
+    0.0 - 0.4: Low confidence (limited or conflicting data)
+
+    0.5 - 0.7: Moderate confidence (some strong indicators but missing key details)
+
+    0.8 - 1.0: High confidence (multiple reliable sources confirming issues)
