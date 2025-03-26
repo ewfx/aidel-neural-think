@@ -1,0 +1,26 @@
+This task involves extracting the names of companies from the transaction data. The output should include all companies present in the transaction data.
+
+Agent
+
+The companies can be either in in the sending or receiving end. The response should be in JSON format as shown in the example response
+
+example response:
+ 
+  {
+    "companies": [
+      "Oracle Corporation",
+      "Intelenet Global Services",
+      "Cisco Systems, Inc.",
+      "Jain Irrigation Systems",
+      "Max Ventures and Industries",
+      "SAP SE",
+      "HSBC Holdings plc",
+      "Ittiam Systems",
+      "Amazon EU S.à r.l.",
+      "Shriram Group",
+      "Ircon International",
+      "Patanjali Ayurved",
+      "Ajanta Group",
+      "Shree Renuka Sugars"
+    ]
+  }

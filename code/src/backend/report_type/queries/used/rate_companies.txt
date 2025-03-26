@@ -1,0 +1,17 @@
+This task involves researching about the company {company} to check whether its a fraudelent or a legitimate company.Classify it as one of corporations, non-profits, shell companies, or government agencies based on the data provided.Assign a risk score out of 5 for the company based on attributes, associated networks, and transaction anomalies.Provide supporting evidence and confidence scores out of 5 for the classifications and risk scores.Provide an overview about the company in less than 100 words.Return the output in JSON format as shown in example.
+
+
+Example output:
+
+{
+    "name": "Google",
+    "risk_score": 1,
+    "confidence_score":4,
+    "evidence": "Not found in sanction lists and legitimate business operating worldwide",
+    "classification": "Corporation"
+    "overview":"Google LLC is a multinational corporation and technology company that specializes in a number of areas, including cloud computing, online advertising, AI, and search engine technology. Larry Page and Sergey Brin, who were Ph.D. students at Stanford University, founded Google in 1998. What started as a search engine has grown into a digital giant that provides a wide range of services such as Gmail, Google Maps, and YouTube. Google’s search engine is the most-used tool for finding information online, processing billions of searches daily."
+}
+ 
+
+
+

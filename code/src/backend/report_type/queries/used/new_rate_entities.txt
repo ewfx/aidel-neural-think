@@ -1,0 +1,89 @@
+Task:
+Analyze the following data, assess the entity {company} risk, and generate a JSON output with the risk score, confidence level, classification, and a brief entity overview. Do not include comments in the JSON output
+Risk Score Scale (0 to 1)
+
+    0.0 - 0.2: Low risk (minimal or no fraud/legal issues)
+
+    0.3 - 0.5: Moderate risk (some past issues but not systemic)
+
+    0.6 - 0.8: High risk (multiple fraud allegations, lawsuits, or regulatory actions)
+
+    0.9 - 1.0: Critical risk (major fraud, ongoing criminal investigations, bankruptcy risk)
+
+Confidence Score (0 to 1)
+
+    Represents how confident the model is in the risk assessment based on data availability and credibility.
+
+    0.0 - 0.4: Low confidence (limited or conflicting data)
+
+    0.5 - 0.7: Moderate confidence (some strong indicators but missing key details)
+
+    0.8 - 1.0: High confidence (multiple reliable sources confirming issues)
+
+Entity Classification:
+
+Based on available data, classify the entity as one of the following:
+
+    "corporation" (For-profit businesses, public or private)
+
+    "non-profit" (Charities, NGOs, educational institutions)
+
+    "shell company" (Entities with minimal operations, often used for financial maneuvering)
+
+    "government agency" (Public sector organizations, state-owned enterprises)
+
+Input Data
+
+Entity Name: [Insert Entity Name]  
+Search Results:  
+[Insert relevant news reports, legal cases, SEC filings, consumer complaints, financial analysis]  
+
+Methodology:
+
+    Legal & Regulatory Issues (40%)
+
+        Fines, lawsuits, SEC/DOJ/FBI investigations?
+
+        Severity and financial impact?
+
+    Financial Red Flags (30%)
+
+        Accounting fraud, insider trading, Ponzi schemes?
+
+        Auditor concerns, stock movements, delisting risks?
+
+    Consumer & Employee Complaints (20%)
+
+        Consumer fraud complaints (BBB, Ripoff Report, Glassdoor)?
+
+        Whistleblower claims, corporate scandals?
+
+    Reputation & Media Sentiment (10%)
+
+        Is the entity frequently in negative news?
+
+        Evidence of systemic misconduct?
+
+Output Format (JSON)
+
+{{
+  "entity": "[Entity Name]",
+  "classification": "[corporation | non-profit | shell company | government agency]",
+  "overview": "[Brief description of the entity, under 100 words]",
+  "risk_score": [0.0 - 1.0],
+  "confidence_score": [0.0 - 1.0],
+  "risk_level": "[Low | Moderate | High | Critical]",
+  "justification": "[Summarized key findings and reasons for risk score]"
+}}
+
+Example Output
+
+{{
+  "entity": "XYZ Corp",
+  "classification": "corporation",
+  "overview": "XYZ Corp is a multinational financial services firm specializing in investment banking, asset management, and financial consulting. It operates in multiple countries and serves institutional and individual clients.",
+  "risk_score": 0.75,
+  "confidence_score": 0.85,
+  "risk_level": "High",
+  "justification": "XYZ Corp has faced multiple SEC investigations and class-action lawsuits related to financial misrepresentation. Recent whistleblower reports suggest ongoing fraudulent activities. Regulatory agencies have imposed fines exceeding $500 million. The company has also been flagged for questionable accounting practices in recent filings."
+}}

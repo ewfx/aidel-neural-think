@@ -1,0 +1,36 @@
+This task involves assigning risk score to each transaction data based on the companies involved in the transaction. It should include the entity types,supporting evidence for the risk score and confidence score for the assigned risk score. A short reason for the risk score should also be included. The response must be in JSON format as shown in the example response
+
+
+Example response:
+ 
+[
+{"Transaction ID": "TXNO01",
+"Extracted Entity": ["Acme Corporation", "Sovco
+Capital Partners"],
+"Entity Type": ["Corporation,"Corporation"],
+“Risk score”: 0.65
+"Supporting Evidence": ["Opencorporates", "Company Website"],
+"Confidence Score": 0.95,
+"Reason": "SovC Capital Partners is not on sanctions list but an entity of interest. It is owned by Russian businessmen and related to Socombank PJSC, a sanctioned
+entity"
+},
+{"Transaction ID": "TXN005",
+"Extracted Entity": ["Oceanic Holdings IC"mAlas Chiricanas"],
+"Entity Type": ["Shell
+Company" "Corporation",
+"Risk score": 0.9,
+"Supporting Evidence": ["Panama Papers Database", "Sanctions List"],
+"Confidence Score": 0.85,
+"Reason":"Oceanic Holdings IIC is a shell company and finds numerous mentions in Panama papers database. It is a sanctioned entity listed on Specially Designated
+},
+{"Transaction ID": " TXN-2023-5A9B",
+BxtEacted entatyne froceanie Boldings WEei
+"Bright Future Nonprofit Inc", "Ali Al-Mansoori"],
+"Entity Type": ["Shell Company", "NGO"
+"Risk Score": 0.95,
+"Supporting Evidence": ["Panama Papers Database""Sanctions List"],
+"Confidence Score": 0.87
+"Reason": "Transaction involves payment from Swiss-based
+Global Horizons to Cayman Islands nonprofit, approved by PEP-linked Ali Al-Mansoori."
+}
+]

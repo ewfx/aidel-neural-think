@@ -1,0 +1,22 @@
+Extract all entity names (individuals, organizations, and financial institutions) from the provided structured and unstructured transaction data.  
+
+Include:
+- Payers (senders)
+- Receivers (beneficiaries)
+- Beneficiary owners
+- Approvers
+- Intermediaries
+- Entities mentioned in related notes, references, and ownership structures  
+
+Identify both direct and indirect relationships (e.g., ownership links, intermediary roles, regulatory mentions).  
+
+Return the extracted entities in the following JSON format:
+
+{
+  "entities": [
+    "entity_1",
+    "entity_2",
+    "entity_3"
+    ...
+  ]
+}

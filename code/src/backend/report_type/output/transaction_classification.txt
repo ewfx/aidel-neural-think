@@ -1,0 +1,1 @@
+{'Transaction ID': 'T049', 'Extracted Entity': ['TotalEnergies SE', 'Petronet LNG India'], 'Entity Type': ['Corporation', 'Corporation'], 'Risk score': 0.2, 'Supporting Evidence': [], 'Confidence Score': 0.8, 'Reason': 'No known sanctions against the entities involved.'}

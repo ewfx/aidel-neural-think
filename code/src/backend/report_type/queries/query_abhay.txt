@@ -1,0 +1,49 @@
+You are an AI system tasked with automating the research and evidence-gathering process for identifying, verifying, and risk-scoring entities from complex, multi-source transaction data.
+Input:
+1.	Transaction Data Documents: Document containing transaction details, including entity names.
+2.	Public Data Sources: Utilize publicly available data from company registries, online sources, financial news, regulatory filings, and legal databases.
+
+Output Expectations:
+1.	A detailed report on identified entities with their classifications and risk scores.
+2.	Supporting evidence for each entity, including confidence scores
+
+Procedure:
+1. Extract entity names from both structured and unstructured transaction data.
+2. Enrich the extracted entities with publicly available data sources such as Opencorporates API, Wikipedia/Wikidata, SEC EDGAR filings, financial crime databases (e.g., OFAC sanctions list,World Bank's PEP list), news articles, and public repositories.
+3. Identify potential fraudulent or high-risk entities using anomaly detection techniques.
+4. Classify entities into categories such as corporations, non-profits, shell companies, and government agencies.
+5. Assign a risk score to each transaction based on entity attributes, associated networks, and transaction anomalies.
+6. Provide supporting evidence and confidence scores for the classifications and risk scores.
+7. Generate a structured output in JSON format containing extracted entities, classifications, risk scores, and supporting evidence.
+
+
+Example Output  : 
+[
+    {
+    "Transaction ID": "TXN001",
+    "Extracted Entity": ["Acme Corporation", "Sovco Capital Partners"],
+    "Entity Type": ["Corporation","Corporation"],
+    "Risk Score": 0.65,
+    "Supporting Evidence": ["Opencorporates", "Company Website"],
+    "Confidence Score": 0.95,
+    "Reason": "Sovco Capital Partners is not on sanctions list but an entity of interest. It is owned by Russian businessmen and related to Socombank PuSC, a sanctioned entity"
+    },
+    {
+    "Transaction ID": "TXN005",
+    "Extracted Entity": ["oceanic Holdings IIC","Alfe Chiricanas"],
+    "Entity Type": ["Shell Company","Corporation"],
+    "Risk Score": 0.9,
+    "Supporting Evidence": ["Panama Papers Database", "Sanctions List"],
+    "Confidence Score": 0.85,
+    "Reason": "Oceanic Holdings ILC is a shell company and finds numerous mentions in Panama papers database. It is a sanctioned entity listed on Specially Designated Nationals and Blocked Persons list"
+    },
+    {
+    "Transaction ID": " TXN-2023-5A9B",
+    "Extracted Entity": ["Oceanic Holdings LLC","Raight Future Nonprofit Inc", "Ali Al-Mansoori"],
+    "Entity Type": ["Shell Company", "NGO", "PEp"],
+    "Risk Score": 0.95,
+    "Supporting Evidence": ["Panama Papers Ratabase","Sanations List"],
+    "Confidence Score": 0.87,
+    "Reason": "Transaction involves payment from Swiss-based Global Horizons to Cayman Islands nonprofit, approved by PEP-linked Ali Al-Mansoori."
+    }
+]
