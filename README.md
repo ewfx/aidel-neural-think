@@ -37,7 +37,7 @@ Develop a sophisticated Generative Al/ML powered system that automates the resea
 This project is deeply inspired and based on [GPTResearcher](https://github.com/assafelovic/gpt-researcher). Provide it with the transactions, it would research about each company on the web involved in the transactions to assign risk scores to each transaction
 
 ## ⚙️ What It Does
-Upload the transaction files to the Web UI and click on Start Research. It searches for each company on the web for fraudulent activities, or any news about it which would increase the risk associated with the company. It scrapes these sites to create a context for the model to provide a risk rating for the company. After researching about each company, it would rate the transactions that involves these companies. The research conducted will shown in the front end as it goes on and the results will also be displayed.
+Upload the transaction files to the Web UI and click on Start Research. It checks if the company is sanctioned under various sanctions(OFAC, CSL and more) using an opensource API. It then searches for each company on the web for news, articles related to fraudulent activities, or any news about it which would increase the risk associated with the company. It scrapes these sites to create a context for the model to provide a risk rating for the company. After researching about each company, it would rate the transactions that involves these companies. The research conducted will shown in the front end as it goes on and the results will also be displayed.
 The results will also be stored under `backend/report_type/output`
 
 ## 🛠️ How We Built It
@@ -81,6 +81,6 @@ as mentioned in your .env file
 
 ## 👥 Team
 - **Alen Antony** - [GitHub](https://github.com/Anonymous-AAA) | [LinkedIn](https://www.linkedin.com/in/alen-antony-bb8935218/)
-- **Praful Siby Mathews** - [GitHub](#) | [LinkedIn](#)
-- **Abhay Raj** - [GitHub](#) | [LinkedIn](#)
-- **Abhinav** - [GitHub](#) | [LinkedIn](#)
+- **Praful Mathews** - [GitHub](https://github.com/prafulmathews) | [LinkedIn](https://www.linkedin.com/in/praful-mathews/)
+- **Abhay Raj** - [GitHub](https://github.com/abhayraj1622) | [LinkedIn](https://www.linkedin.com/in/abhay-raj-1b0866210/)
+- **Abhinav Konkal** - [GitHub](#) | [LinkedIn](#)
