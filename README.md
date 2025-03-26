@@ -83,4 +83,4 @@ as mentioned in your .env file
 - **Alen Antony** - [GitHub](https://github.com/Anonymous-AAA) | [LinkedIn](https://www.linkedin.com/in/alen-antony-bb8935218/)
 - **Praful Mathews** - [GitHub](https://github.com/prafulmathews) | [LinkedIn](https://www.linkedin.com/in/praful-mathews/)
 - **Abhay Raj** - [GitHub](https://github.com/abhayraj1622) | [LinkedIn](https://www.linkedin.com/in/abhay-raj-1b0866210/)
-- **Abhinav Konkal** - [GitHub](#) | [LinkedIn](#)
+- **Abhinav Konkal** - [GitHub](https://github.com/abhikonkal) | [LinkedIn](https://www.linkedin.com/in/abhinav-konkal-12159206/)
